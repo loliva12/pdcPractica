@@ -18,7 +18,7 @@ public class SaveServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection("jdbc:sqlserver://192.168.3.240;databaseName=pdc;encrypt=false", "pdc", "pdc");
+            Connection connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=pdc;encrypt=false", "sa", "123456");
 
             VotoBean voto = new VotoBean();
             voto.setCorreo(req.getParameter("correo"));

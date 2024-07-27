@@ -19,7 +19,7 @@ public class BuscarServlet extends HttpServlet {
             LinkedList<LibroBean> items = new LinkedList<LibroBean>();
 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection("jdbc:sqlserver://192.168.3.240;databaseName=pdc;encrypt=false", "pdc", "pdc");
+            Connection connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=pdc;encrypt=false", "sa", "123456");
             PreparedStatement preparedStatement = connection.prepareStatement("declare @nro_genero\tinteger = ?\n" +
                     "\n" +
                     "select nroMaterial = m.nro_material,\n" +

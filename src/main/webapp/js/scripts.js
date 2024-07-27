@@ -18,7 +18,7 @@ function buscar() {
             if (res.ok) {
                 return res.text();
             }
-            throw Error(res.statusText || 'Error del servidor');
+            throw Error(res.statusText || 'Error del servidor - buscar');
         }).then(html => {
 
             document.getElementById('iList').insertAdjacentHTML('afterbegin', html);
@@ -52,7 +52,7 @@ function save(nroMaterial) {
         if (res.ok) {
             return res.text();
         }
-        throw Error(res.statusText || 'Error del servidor');
+        throw Error(res.statusText || 'Error del servidor - save');
     }).then(html => {
         document.getElementById('voto'+nroMaterial).innerHTML = '';
         document.getElementById('voto'+nroMaterial).innerHTML = html;
