@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="generos.xsd">
+    <genero id="1">Ficción</genero>
+    <genero id="2">No Ficción</genero>
+    <genero id="3">Ciencia Ficción</genero>
+    <genero id="4">Fantasía</genero>
+    <genero id="5">Misterio</genero>
+    <genero id="6">Biografía</genero>
+    <genero id="7">Historia</genero>
+</generos>
