@@ -36,7 +36,6 @@
         <c:forEach var="genero" items="${generos}">
           <option value="${genero.id}">${genero.nombre}</option>
         </c:forEach>
-
       </select>
     </div>
   </form>
